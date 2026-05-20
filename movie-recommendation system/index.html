@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Movie Recommendation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+
+    <h1>🎬 Movie Recommendation System</h1>
+    <p>Discover movies using AI similarity search, mood filtering and hidden gems</p>
+
+
+    <div class="search-bar">
+        <!-- <input type="text" id="movieInput" placeholder="Search movies..."> -->
+          <input type="text" id="movieInput" placeholder="Type anything ">
+        <button onclick="getRecommendations()">Recommend</button>
+    </div>
+
+    <div class="moods">
+        <button onclick="setMood('happy')">😊 Happy</button>
+        <button onclick="setMood('sad')">😢 Sad</button>
+        <button onclick="setMood('action')">🔥 Action</button>
+        <button onclick="setMood('romantic')">❤️ Romantic</button>
+        <button onclick="setMood('dark')">🌙 Dark</button>
+    </div>
+
+</div>
+
+
+<h2 class="section-title">🔥 Recommended Movies</h2>
+<div id="results" class="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

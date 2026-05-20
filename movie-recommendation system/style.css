@@ -1,0 +1,175 @@
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background: radial-gradient(circle at top,#071c3d,#020617);
+    color:white;
+}
+
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#aaa;
+    font-size:16px;
+}
+
+/* ================= SEARCH ================= */
+.search-bar{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.search-bar input{
+    width:400px;
+    padding:14px;
+    border-radius:30px;
+    border:none;
+    background:#0f172a;
+    color:white;
+    outline:none;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.search-bar button{
+    padding:14px 25px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#3b82f6,#06b6d4);
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.search-bar button:hover{
+    transform:scale(1.05);
+}
+
+/* ================= MOODS ================= */
+.moods{
+    margin-top:20px;
+}
+
+.moods button{
+    margin:5px;
+    padding:8px 15px;
+    border-radius:20px;
+    border:none;
+    background:#0f172a;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.moods button:hover{
+    background:#3b82f6;
+    transform:scale(1.05);
+}
+
+/* ================= SECTION ================= */
+.section-title{
+    text-align:center;
+    margin-top:30px;
+    font-size:24px;
+}
+
+/* ================= GRID ================= */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+/* ================= CARD ================= */
+.movie-card{
+    background:#0f172a;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.6);
+}
+
+.movie-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 10px 30px rgba(0,0,0,0.9);
+}
+
+/* ================= POSTER ================= */
+.poster{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.no-poster{
+    width:100%;
+    height:300px;
+    background:#1e293b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#aaa;
+}
+
+/* ================= CARD CONTENT ================= */
+.card-content{
+    padding:12px;
+}
+
+.card-content h3{
+    margin:5px 0;
+    font-size:18px;
+}
+
+.card-content p{
+    margin:4px 0;
+    font-size:14px;
+    color:#ccc;
+}
+
+.watch-btn{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 10px;
+    background:#22c55e;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.watch-btn:hover{
+    background:#16a34a;
+}
+
+/* ================= LOADING ================= */
+.loading-box{
+    text-align:center;
+    margin-top:40px;
+}
+
+.loader{
+    border:5px solid #333;
+    border-top:5px solid #3b82f6;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    animation:spin 1s linear infinite;
+    margin:auto;
+}
+
+@keyframes spin{
+    100%{transform:rotate(360deg);}
+}
